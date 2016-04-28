@@ -19041,13 +19041,13 @@ var List = React.createClass({
 
     render: function () {
         var listItems = ingredients.map(function (item) {
-            return React.createElement(ListItems, { key: item.id, ingredient: item.text });
+            return React.createElement(ListItem, { key: item.id, ingredient: item.text });
         });
 
         return React.createElement(
             'ul',
             null,
-            ListItems
+            listItems
         );
     }
 });
@@ -19055,7 +19055,7 @@ var List = React.createClass({
 module.exports = List;
 
 },{"./ListItem.jsx":160,"react":157}],160:[function(require,module,exports){
-var react = require('react');
+var React = require('react');
 var ListItem = React.createClass({
   displayName: 'ListItem',
 
@@ -19079,6 +19079,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var List = require('./components/List.jsx');
 
-ReactDom.render(React.createElement(List, null), document.getElementById('ingredients'));
+ReactDOM.render(React.createElement(List, null), document.getElementById('ingredients'));
 
 },{"./components/List.jsx":159,"react":157,"react-dom":1}]},{},[161]);

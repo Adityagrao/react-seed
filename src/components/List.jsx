@@ -9,10 +9,10 @@ var ingredients = [ {"id":1,"text":"ham"},
 var List = React.createClass({
     render: function(){
       var listItems = ingredients.map(function(item){
-          return <ListItems key={item.id} ingredient={item.text}/>;
+          return <ListItem key={item.id} ingredient={item.text}/>;
       });
 
-      return (<ul>{ListItems}</ul>);
+      return (<ul>{listItems}</ul>);
     }
 });
 
