@@ -1,4 +1,29 @@
 var React = require('react');
+
+var ListItem = React.createClass
+({
+  render: function() // Defining
+  {
+          return (
+            <li>
+            <h4>
+            {this.props.text} // Java Script
+            </h4>
+            </li>
+          );
+  }
+});
+
+module.exports = ListItem;
+
+
+
+
+
+
+
+
+/*var React = require('react');
 var ListItem = React.createClass({
   render: function(){
     return(
@@ -9,4 +34,4 @@ var ListItem = React.createClass({
   }
 });
 
-module.exports = ListItem;
+module.exports = ListItem;*/
